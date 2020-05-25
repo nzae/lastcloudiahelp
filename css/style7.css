@@ -1,0 +1,281 @@
+/* google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+#wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    margin: 30px 0;
+    width: 100%;
+}
+
+/* nav */
+
+.logo {
+    width: 20%;
+    float: left;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    width: 60%;
+    float: right;
+    list-style-type: none;
+    text-align: center;
+    transition: max-height 0.3s;
+}
+
+/* nav ul li is the same as nav li also the same as .menu li */
+
+nav ul li {
+    /* horizontal */
+    display: inline-block;
+    /* dropdown */
+    position: relative;
+}
+
+/* nav a */
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    font-weight: 600;
+}
+
+/* Pseudo-classes - used to define a special state of an element... :link, :visited, :hover, :active, :focus */
+
+nav a:visited {
+    color: #00795f;
+}
+
+nav a:link {
+    color: #00795f;
+}
+
+nav a:active {
+    color: #000;
+}
+
+nav a:focus {
+    color: red;
+}
+
+nav a:hover {
+    color: #fff;
+    background-color: #00795f;
+}
+
+/* hover btn */
+
+.btn:hover {
+    color: #fff;
+    background-color: #00795f;
+}
+
+/* dropdown */
+
+nav ul li ul {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    display: none;
+}
+
+nav ul li ul li a {
+    padding: 10px 7.5px;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.banner {
+    background-image: url(../images/show.jpg);
+    height: 500px;
+    background-size: cover;
+}
+
+.banner-text {
+    color: #fff;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+.btn {
+    border: 2px solid #00795f;
+    padding: 10px;
+    text-decoration: none;
+    color: #00795f;
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.sideleft {
+    width: 40%;
+    float: left;
+    height: 560px;
+    /* overflow - visible, hidden, scroll, auto */
+    overflow: hidden;
+}
+
+.sideright {
+    width: 50%;
+    float: right;
+}
+
+.sideright img {
+    width: 100%;
+}
+
+footer {
+    padding: 40px;
+    background-color: #00795f;
+    text-align: center;
+    color: #fff;
+}
+
+/* internal link - fragment identifier - two component 
+1. element that identifies the named fragment
+2. anchor tag that links to the named fragment
+*/
+
+.top {
+    width: 150px;
+    background-color: #fff;
+    color: #00795f;
+    bottom: 10px;
+    right: 30px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-weight: 600;
+    position: fixed;
+}
+
+/*Add another two column layout after sideleft and sideright */
+
+/* Add another two column layout */
+
+.imagesleft {
+    width: 50%;
+    float: left;
+}
+
+.imagesleft img {
+    width: 100%;
+}
+
+.textright {
+    width: 50%;
+    float: right;
+}
+
+/* 3 column layout */
+
+.box {
+    width: 33%;
+    float: left;
+    text-align: center;
+    padding: 10px;
+}
+
+.box img {
+    width: 150px;
+}
+
+/* media queries - device type (print, screen, only screen and, speech) */
+header label{
+    position: absolute;
+    top: 20px;
+    right: 80px;
+    padding: 16px 20px;
+    cursor: pointer;
+    font-size: 40px;
+    color: #000;
+    display: none;
+}
+nav a{
+    color: #00795f;
+}
+#nav{
+    display: none;
+}
+@media(max-width:992px){
+    header label{
+        display: block;
+    }
+    nav ul{
+        width: 100%;
+        background-color: #00795f;
+        max-height: 0;
+        overflow: hidden;
+    }
+    nav ul li{
+        display: block;
+    }
+    nav a{
+        color: #fff;
+    }
+    nav a:visited{
+        color: #fff;
+    }
+    nav a:link{
+        color: #fff;
+    }
+    #nav:checked~nav ul{
+        max-height: 300px;
+    }
+
+    /* transition - transition-property transition duration
+    
+    */
+    .sideleft{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .sideright{
+        float: none;
+        width: 100%;
+    }
+    .imagesleft{
+        float: none;
+        width: 100%;
+    }
+    .textright{
+        float: none;
+        width: 100%;
+    }
+    .box{
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+}

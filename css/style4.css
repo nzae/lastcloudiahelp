@@ -1,0 +1,100 @@
+*{
+box-sizing: border-box;
+}
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+    width: 80%;
+    margin: 0 auto;
+    /* box shadow */
+    /* box shadow: horizontal vertical blur-radius color */
+    box-shadow: 0 0 3px rgba(0,0,0,0.5)
+}
+
+.box {
+    width: 300px;
+    height: 150px;
+    background-color: mediumseagreen;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.box2 {
+    width: 150px;
+    height: 80px;
+    background-color: lightblue;
+    margin: 10px;
+    border: 2px dashed black;
+}
+/* float - left, right */
+.sideleft{
+    width: 45%;
+    border: 1px solid grey;
+    padding: 10px;
+    margin: 10px;
+    float: left;
+
+    /* 1 + 1 10 + 10 + 50% = */
+    /* box-sizing: border-box; */
+}
+.sideright{
+    width: 45%;
+    border: 1px solid grey;
+    padding: 10px;
+    margin: 10px;
+    float: right;
+}
+
+/* restore the page */
+.clearfix{
+    clear: both; /* clear: both, left, right (to clear teh floats) */
+}
+header{
+    width: 100%;
+    padding: 40px;
+
+}
+.logo{
+    width: 20%;
+    font-size: 40px;
+    font-weight: bold;
+    float: left;
+}
+nav{
+    text-align: center;
+    width: 50%;
+float: right;
+}
+nav a{
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px
+}
+footer{
+    width: 100%;
+    padding: 40px;
+    background-color: lightblue;
+    text-align: center;
+    border-top: 2px solid lightcoral;
+}
+hr{
+    background-color: lightcoral;
+    height: 3px;
+}
+/*  Three column layout */
+.line{
+    width: 25%;
+    border: 1px solid grey;
+    padding: 10px;
+    margin: 3px;
+    float: left;
+}
+.line img{
+    width: 100px;
+}
+/* overflow */
+

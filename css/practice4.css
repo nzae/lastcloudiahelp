@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+    
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.5;
+        margin: 0px;
+        font-size: 18px;
+    }
+    .clearfix{
+        clear: both;
+    }
+    #wrapper{
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    main{
+        width: 80%;
+        margin: 40px auto;
+    }
+
+    /* Header and Nav */
+    .LOGO{
+        width: 30%;
+        font-size: 50px;
+        font-weight: bold; 
+        color:rebeccapurple;
+        float: left;
+    }
+
+    nav ul{
+        text-align: right;
+        width: 70%;
+        float: right;
+    }
+
+    nav ul li{
+        position: relative;
+        display: inline-block;
+        list-style-type: none;
+        margin-right: 50px;
+    }
+    nav ul li a{
+        transition: 0.5s;
+        text-decoration: none;
+        padding: 30px;
+
+    }
+
+    header{
+        width: 100%; 
+        margin: 0px 0;
+        /* position: absolute; */
+    }
+
+nav ul li a{
+    color: rebeccapurple;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+nav ul li a:hover{
+    color: lightseagreen;
+}
+
+/* Banner */
+.banner{
+    background-image: url(../images/show.jpg);
+    height: 100vh;
+    text-align: left;
+    line-height: 2;
+    background-size: cover;
+}
+.bannertext{
+    color: white;
+    padding-top: 100px;
+    width: 60%;
+    margin: 40px auto;
+    margin-top: 0;
+}
+
+.banner h1{
+    color: lightgrey;
+    font-size: 4em;
+}
+
+.button{
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+
+    background-color: rebeccapurple;
+    padding: 15px;
+    margin: 25px 0;
+    border: 2px solid rebeccapurple;
+
+    transition: 0.5s;
+}
+
+.button:hover{
+    background-color: #FFF;
+    color: rebeccapurple;
+}
+
+/* Column Pair Layout Elements */
+.sideright1{
+    width: 40%;
+    float: right;
+}
+
+.sideleft1{
+    width: 50%;
+    float: left;
+}
+
+.rightimage{
+    width: 100%;
+}
+
+.sideright2{
+    padding-top: 150px;
+    width: 60%;
+    float: right;
+}
+
+.sideleft2{
+    padding-top: 150px;
+    width: 40%;
+    float: left;
+}
+
+
+/* Single Column Layout */
+
+.circleul{
+    list-style-type: circle;
+    margin-left: 50px;
+}
+
+/* Footer */
+
+footer{
+    text-align: center;
+    color: #FFF;
+    background-color: rebeccapurple;
+    padding: 50px;
+    border-top: 5px solid lightseagreen;
+}

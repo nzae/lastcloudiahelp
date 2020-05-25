@@ -1,0 +1,76 @@
+/* Normally only 1 css is created. But This is only done for purposes of lesson4 
+
+Style rule - comes in with selector + declaration Selector{declaration}
+
+*/
+body{
+background-color: #e6e6fa;
+/* this is always text color */color: #191970;
+font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: #191970;
+    line-height: 200%;
+}
+h1{
+    line-height: 200%; /* %, px, em */
+    color: #e6e6fa;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-indent: 3em;
+    text-shadow: 3px 5px 8px grey;
+    /* text-shadow: horizontal, vertical value, blur raidus, color */
+}
+nav{
+    word-spacing: 5em;
+    background-color:
+}
+nav a{
+    font-weight: bold;
+    text-decoration: none /* underline,overline,none, */;
+    font-size: 1.25em;
+
+}
+h2{
+    background-color: #aeaed4;
+    color: #191970;
+    text-align: center; /* left, right, center, justify (straightens edeges) */
+}
+p{
+    text-indent: 3em;
+
+}
+footer{
+    color: #333;
+    font-size: 0.75em;
+    font-style: italic;
+}
+/* selectors - elements (nav a, nav, h2, p, etc..), #id, .class, parent-child, multiple element */
+#engine{
+    font-size: 20px;
+    color: red;
+}
+.media{
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Only difference between id and class, is ID is 1 unique identifier, class is used to select multiple element on the page */
+
+
+/* parent-child selector */
+nav a{
+
+}
+ul li{
+    color:green
+}
+
+/* multiple selectors  */
+main, footer, header{
+    display: block;
+}
+#wrapper{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}

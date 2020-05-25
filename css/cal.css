@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(../images/table.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+table, td, th{
+    border: 5px solid white;
+    border-collapse: collapse;
+
+}
+table{
+    margin-top: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+    box-shadow: 0, 10px, 60px rgba(0,0,0,0.5);
+/* box shadow: 0, 10px, blur raidus, rgba shadow */
+}
+th, td{
+    padding: 20px;
+    opacity: 0.9;
+    text-align: center;
+    transition: .3s;
+
+}
+caption{
+    /* background: url(../images/caption.jpg); */
+    height: 200px;
+    padding: 16px;
+    color: white;
+    font-size: 60px;
+    background-position: center;
+    background-size: cover;
+}
+td.active, td:hover{
+    background-color: #05a081;
+    color: white;
+    font-weight: bold;
+    cursor: pointer; /* changes cursor to be a pointer */
+}

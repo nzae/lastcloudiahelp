@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400-500&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 0px;
+}
+
+#wrapper{
+    line-height: 200%;
+    margin: auto;
+}
+
+.clearfix{
+    clear: both;
+}
+
+
+/* Button Style */
+
+.button{
+    
+    text-decoration: none;
+    font-weight: bold;
+
+    color: #FFF;
+    background-color: #FF4F5A;
+    border: 2px solid #FF4F5A;
+    padding: 15px;
+    margin: 25px 0;
+    transition: 0.5s;
+}
+
+.button:hover{
+    color: #FF4F5A;
+    background-color: #FFF;
+    font-weight: bold;
+}
+
+
+
+/* Nav Elements */
+
+header{
+    position: absolute; /* THIS is required to make your header OVERLAP with the background image of banner */
+    margin:  30px 0;
+    width: 100%;
+}
+
+.logo{
+    padding-left: 175px;
+    width: 30%;
+    float: left;
+}
+
+.logo img{
+    width: 120px;
+}
+
+
+nav ul{
+    width: 70%;
+    float: right;
+    list-style-type: none;
+    text-align: center;
+    transition: 0.5s;
+}
+
+nav ul li{
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a{
+    color: #FF4F5A;
+    font-weight: bold;
+
+    text-decoration: none;
+    display: block;
+
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+    padding-right: 50px;
+    padding-left: 50px;
+
+    transition: 0.5s;
+}
+
+nav ul li a:hover{
+    color: rgb(255, 118, 118);
+}
+
+.banner{
+    background-image: url(../images/background.jpg);
+    height: 100vh;
+    text-align: center;
+    background-size: cover;
+}
+
+.text-content{
+    width: 60%;
+    margin: 40px auto;
+    margin-top: 0;
+}
+
+.banner h1{
+    color: #FF4F5A;
+    font-size: 50px;
+    line-height: 200%;
+    padding-top: 250px;
+    margin: 0;
+}
+
+.banner h1:hover{
+    transition: 0.5s;
+    color: rgb(173, 31, 40);
+}
+
+
+/* main */
+main{
+    width: 80%;
+    margin: 40px auto;
+}
+
+/* Column Formatting */
+
+.LeftSideC{
+    width: 40%;
+    float: left;
+}
+
+.RightSideC{
+    width: 50%;
+    float: right;
+}
+
+.LeftSideC2{
+    width: 50%;
+    float: left;
+}
+
+.LeftSideC2 img{
+    width: 100%;
+}
+
+.RightSideC2{
+    width: 40%;
+    float: right;
+}
+
+.RightSideC img{
+    width: 100%;
+}
+
+.LeftSideC ul{
+    list-style-type: circle;
+}
+
+/* 3 column layout */
+
+.box {
+    width: 33%;
+    float: left;
+    text-align: center;
+    padding: 10px;
+}
+
+.box img {
+    width: 150px;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 40px;
+    background-color: darkslategrey;
+    text-align: center;
+    border-top: 5px solid #FF4F5A;
+    color: #fff;
+}
+
+
+
+
+
+

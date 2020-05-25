@@ -1,0 +1,27 @@
+/* comments */
+/* style rule - selector and declaration */
+/* selectors (what can we select) - elements(a, h1, nav, header, footer ...) id(#idname), class(.classname), multiple elements (h1, h4, a) */
+
+body{
+    background-color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    background-color: lightgreen;
+    color:blue;
+}
+p{
+    font-style: italic;
+}
+footer{
+    font-size: 14px;
+    font-style: italic;
+
+}
+/* Parent child selector example */
+nav a{
+    font-weight: bold;
+
+}
+/* ids and classes for Wednesday
+Read more, and go through the slides */

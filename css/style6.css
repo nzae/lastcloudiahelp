@@ -1,0 +1,195 @@
+/* google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+#wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    margin: 30px 0;
+    width: 100%;
+}
+
+
+/* nav */
+/* 2 colum layout creation below */
+.logo{
+    width: 20%;
+    float: left;
+    font-size: 50px;
+    font-weight: 600; /* notice wieght 600 is same as google font we selected */
+}
+nav ul{
+    margin: 0em;
+    padding: 0em;
+    width: 60%;
+    float: right;
+    list-style-type: none; /* important to make bullets go away! */
+    text-align: center;
+}
+
+/* to create horizontal nav, target nav ul li */
+/* nav ul li is = nav li = .menu li */
+nav ul li{
+
+    display: inline-block;
+
+    /* Above, how we make the NAV HORITIONZAL instead of vertical */
+}
+
+nav ul li a{
+    text-decoration: none; /* bye bye underlines */
+    display: block;
+    padding: 15px;
+    font-weight: 600;
+}
+
+/* Pseduo-classes - used to define a special state of an element... :link, :visited, :hover, :active, :focus */
+
+nav a:visited{
+    color: #00795f;
+}
+
+nav a:link{
+    color: #00795f;
+}
+
+nav a:active{
+    color: black;
+}
+
+nav a:focus{
+    color: #000000;
+}
+/* Focus is a persistent version of active */
+
+
+nav a:hover{
+    color: white;
+    background-color: #00795f;
+}
+
+/* Most important to create hover effect in nav a */
+
+
+/* how to create hover button */
+
+.btn:hover{
+    color: white;
+    background-color: #00795f;
+}
+
+/* how to create a dropdown */
+
+nav ul li ul{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    display: none;
+}
+
+nav ul li ul li a{
+    padding: 10px 2px;
+} 
+
+/* Key for making dropdown display after you make it disappear with display: one */
+nav ul li:hover ul{
+    display: block;
+}
+
+
+.clearfix {
+    clear: both;
+}
+
+.banner {
+    background-image: url(../images/show.jpg);
+    height: 500px;
+    background-size: cover;
+}
+
+.banner-text {
+    color: #fff;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+.btn {
+    border: 2px solid #00795f;
+    padding: 20px;
+    text-decoration: none;
+    color: #00795f;
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.sideleft {
+    width: 40%;
+    float: left;
+    height: 500px;
+    /* overflow - visible, hidden, scroll, auto */
+    overflow: auto;
+}
+
+.sideright {
+    width: 50%;
+    float: right;
+}
+
+.sideright img {
+    width: 100%;
+}
+
+footer {
+    padding: 40px;
+    background-color: #00795f;
+    text-align: center;
+    color: #fff;
+}
+
+
+/* Internal link - fragment identifier - two component 
+1. element that indentifies the named fragment
+2. anchor tag that links to the named fragment */
+
+.top {
+    width: 150px;
+    background-color: #fff;
+    color: #00795f;
+    bottom: 10px;
+    right: 30px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid grey;
+    font-weight: 600;
+    position: fixed;
+
+}
+
+
+/*Add another two column layout after sideleft and sideright */
+
+
+
+
+/* Add another two column layout */
+
+/* 3 column layout */

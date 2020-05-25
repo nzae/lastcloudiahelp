@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+#wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    margin: 30px 0;
+    width: 100%;
+
+}
+.logo{
+    font-size: 50px;
+    font-weight: bold;
+    float: left;
+    width: 20%;
+}
+/* nav */
+nav{
+    width: 60%;
+    float: right;
+    text-align: center;
+} 
+.clearfix{
+    clear: both;
+}
+/* parent child selection */
+nav ul{
+    list-style: none; 
+        /* removes bullet points from ul */
+    margin: 0;
+    padding: 0;
+        /* gets rid of default margin and padding, because ul is a block level element */
+}  
+nav ul li{
+    display: inline-block;
+        /* to have the list display inline and block, so the nav is now HORIZONTAL!!!! */
+}
+nav ul li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+.banner{
+    background-image: url(../images/show.jpg);
+    height: 500px;
+    background-size: cover;
+    
+}
+.banner-text{
+    color: white;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    /* how to center the text in the middle of the image!!! shown above, but its still at the very top middle */
+    padding-top: 150px;
+    /* how to center text in the middle of the image, bringing it down from the top to direct middle */
+    
+}
+.button{
+    border: 2px solid #00795f;
+    padding: 10px;
+    text-decoration: none;
+    color: #00795f;
+    /* margin-top: 10px */
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+    border-radius: 30px;
+    /* how to move text to middle */
+    text-align: center;
+}
+.sideleft{
+    width: 40%;
+    float: left;
+    /* overflow - visible, hidden, scroll, auto */
+    overflow: scroll;
+
+}
+.sideright{
+    width: 50%;
+    float: right;
+}
+.sideright img{
+    width: 100%;
+
+}
+footer{
+    padding: 40px;
+    background-color: teal;
+    text-align: center;
+    color: white;
+
+}
+.top{
+    width: 100px;
+    background-color: white;
+    color: teal;
+    /* position - relative, absolute, fixed, static (Default)  */
+    position: fixed;
+    bottom: 10px;
+    right:  30px;
+
+}
+/* pseudo class: so when you hover on the a tag, the color of the a tag will change */
+/* dropdown */
+/* internal link - (back to top button) */
